@@ -30,12 +30,7 @@ $("form").on("submit", calcBAC)
        $("p#output").text("Your BAC is " + result.toFixed(3));
 
     }
-    //utility function?
-    function printBAC(BAC, hours)
-    {
-       let output = BAC - (hours * .015);
-       return output;  
-    }
+    
 
     
 
