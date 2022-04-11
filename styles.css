@@ -1,0 +1,49 @@
+@charset "UTF-8";
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: .3em;
+    border:none;
+
+}
+
+body
+{
+    background: url("boozebg.png") repeat;
+}
+h1, form, p
+{
+    text-align: center;
+}
+
+
+input, button
+{
+    border: 2px solid;
+    margin: .5em 0em .5em 0em;
+}
+
+
+#bac-graphic
+{
+    background-image: url("bac-symptoms.png");
+    width: 1000px;
+    height: 319px;
+    position: fixed;
+
+}
+
+input[type=range]/*slider styles*/
+{
+    width: 800px;
+    left: 25px;
+    top: 163px;
+    position: absolute; 
+}
+
+
+
+/* You can't imagine how much it's bugging me that I can't find a way to center these correctly.
+*/
+

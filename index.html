@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAC Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>BAC CALCULATOR</h1>
+
+    <form>
+
+        <label for ="weight">Weight</label><br>
+        <input id="weight" 
+        type ="number" 
+        placeholder="max 600 (lbs)" min="0" max="600"
+        step=".5"
+        required>
+        <br>
+        
+        <label for ="beer">Number of Beers Consumed</label><br>
+        <input id="beer" 
+        type ="number" 
+        placeholder="max 50" min="0" max="50"
+        step=".5"
+        required>
+        <br>
+        
+        <label for ="wine">Glasses of Wine Consumed</label><br>
+        <input id="wine" type ="number" placeholder="max 50" min="0" max="50"
+        step=".5"
+        required>
+        <br>
+        
+        <label for ="liquor">Ounces of Liquor Consumed</label><br>
+        <input id="liquor" type ="number" placeholder="max 50" min="0" max="50"
+        step=".5"
+        required>
+        <br>
+        
+        <label for ="hours">Hours since First Drink</label><br>
+        <input id="hours" 
+        type ="number" be
+        placeholder="round by 1/2 hour" 
+        min="0" max="24"
+        step=".50"
+        required>
+        <br>
+        <button>How drunk am I?</button>
+        <br>
+
+        <p id="output">
+            <!--BAC result response-->
+        </p>
+
+        <div id="graphic">
+            <div id="bac-graphic"> <!--slider graphic-->
+                <input id="slider"
+                type="range"
+                step=".001"
+                min="0" max=".5"
+                value="0">
+            </div> <!--closes bac-graphic--> 
+    </div> <!--closes graphic-->
+    </form>
+
+
+    <script defer
+	src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	crossorigin="anonymous"> 
+    </script> <!--jQuery CDN-->
+    <script defer src="script.js"></script> <!--js source-->
+</body>
+</html>
